@@ -1,0 +1,192 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.light-mode {
+  --color-bg: #282828;
+  --color-fg: #98971a;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-fg-0: #fbf1c7;
+  --color-fg-1: #ebdbb2;
+  --color-fg-2: #d5c4a1;
+  --color-fg-3: #bdae93;
+  --color-fg-4: #a89984;
+  --color-fg-5: #928374;
+  --color-fg-6: #7c6f64;
+  --color-fg-7: #665c54;
+  --color-fg-8: #504945;
+  --color-fg-9: #3c3836;
+  --color-fg-10: #282828;
+  --color-fg-11: #1d2021;
+  --icons: #f2e5bc;
+  --inverse: #fbf1c7;
+  --br-sm-2: 14px;
+  --box-shadow-1: 0 3px 15px rgba(255, 255, 255, .2);
+  --highlight: #8ec07c;
+}
+
+:root {
+  --color-bg: #fcf1c7;
+  --color-fg: #cc241d;
+  /* Invert white and black highlights for dark mode */
+  --color-white: #000;
+  --color-black: #fff;
+  --color-fg-0: #282828;
+  --color-fg-1: #3c3836;
+  --color-fg-2: #504945;
+  --color-fg-3: #665c54;
+  --color-fg-4: #7c6f64;
+  --color-fg-5: #928374;
+  --color-fg-6: #a89984;
+  --color-fg-7: #bdae93;
+  --color-fg-8: #d5c4a1;
+  --color-fg-9: #ebdbb2;
+  --color-fg-10: #fbf1c7;
+  --color-fg-11: #f9f5d7;
+  --icons: #f2e5bc;
+  --inverse: #282828;
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.5);
+  --highlight: #dc322f;
+}
+
+body {
+  background-color: var(--color-bg);
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.1rem;
+  color: var(--color-white);
+  transition: all 0.4s ease-in-out;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Fira Code", monospace;
+}
+
+header {
+  min-height: 100vh;
+  color: var(--color-white);
+  overflow: hidden;
+  padding: 0 !important;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 3rem 18rem;
+}
+
+.italics {
+  font-style: italic;
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(-100%) scaleY(0);
+  }
+
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0 !important;
+  }
+}
+
+.highlight {
+  color: var(--highlight);
+}
+
+.main-title {
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+}
+
+.main-title h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--inverse);
+  text-shadow: var(--color-fg) 0 0 7px;
+}
+
+/*.main-title h2 span {*/
+/*  color: var(--color-fg);*/
+/*}*/
+
+/*.main-title h2 .bg-text {*/
+/*  position: absolute;*/
+/*  top: 50%;*/
+/*  left: 50%;*/
+/*  color: var(--color-fg-9);*/
+/*  transition: all 0.4s ease-in-out;*/
+/*  z-index: -1;*/
+/*  transform: translate(-50%, -50%);*/
+/*  font-weight: 800;*/
+/*  font-size: 6.3rem;*/
+/*  text-wrap: nowrap;*/
+/*}*/
+
+@media screen and (max-width: 1432px) {
+  .main-title h2 .bg-text {
+    font-size: 5.5rem;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .main-title h2 {
+    font-size: 4rem;
+  }
+
+  .main-title h2 span {
+    font-size: 4rem;
+  }
+
+  .main-title h2 .bg-text {
+    font-size: 4.5rem;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+  .main-title h2 {
+    font-size: 3rem;
+  }
+
+  .main-title h2 span {
+    font-size: 3rem;
+  }
+
+  .main-title h2 .bg-text {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-title h2 {
+    font-size: 2rem;
+  }
+
+  .main-title h2 span {
+    font-size: 2.3rem;
+  }
+
+  .main-title h2 .bg-text {
+    font-size: 2.3rem;
+  }
+}
+
+/* END GLOBAL */
